@@ -29,3 +29,8 @@ steps:
     sonarQubeRunAnalysis: true
     isJacocoCoverageReportXML: true
     sqMavenPluginVersionChoice: 'latest'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'es.jfcorugedo-sonar-scanner.pdf'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
